@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery slider</title>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+<div class="container">
+	<h1>测试</h1>
+	<div class="slider" id="slider"></div>
+</div>
+<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="slider_c.js"></script>
+<script type="text/javascript" src="slider_json.js"></script>
+<script type="text/javascript">
+
+console.log( slider_json ) ;
+var qq = $.slider_mm({
+	"obj" :$("#slider") ,  
+	"json":slider_json 
+}) ;
+
+$("#slider img").bind("contextmenu",function(e){   
+	return false;   
+});
+</script>
+</body>
+</html>
